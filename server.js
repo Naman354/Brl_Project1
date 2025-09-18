@@ -3,20 +3,21 @@ const app = express();
 
 require("dotenv").config();
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
 const routes = require("./routes/Routes");
 app.use("/api", routes);
 
-app.listen(PORT , ()=> {
-    console.log("The server is started");
-});
 
 const db = require("./config/database");
 
 db();
+
+app.listen(PORT , ()=> {
+    console.log("The server is started");
+});
 
 app.get('/' , (req, res)=> {
 
