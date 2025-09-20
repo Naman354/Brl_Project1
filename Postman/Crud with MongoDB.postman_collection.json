@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "45574bb0-e1ff-4217-b3c2-bd0a7d05b29f",
+		"name": "Crud with MongoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48451096",
+		"_collection_link": "https://srinaman05-3997301.postman.co/workspace/Naman-Srivastava's-Workspace~3848bb91-f16a-4dbd-80d3-243ccce1190c/collection/48451096-45574bb0-e1ff-4217-b3c2-bd0a7d05b29f?action=share&source=collection_link&creator=48451096"
+	},
+	"item": [
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Your Name\",\r\n    \"description\":\"Sample Description\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/postRoute",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"postRoute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/getRoute",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"getRoute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"Yayy\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/putRoute/68c7fc2bdacf3a517abc51e8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"putRoute",
+						"68c7fc2bdacf3a517abc51e8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/deleteRoute/68ce7dd1e71268cb361d317c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deleteRoute",
+						"68ce7dd1e71268cb361d317c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
