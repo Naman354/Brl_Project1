@@ -20,8 +20,8 @@ const Schema_Structure = new mongoose.Schema(
         updatedAt:{
             type:Date,
             default:Date.now,
-        }
-    }
+        },
+    },
 );
 
 module.exports = mongoose.model("Schema_Structure", Schema_Structure);
