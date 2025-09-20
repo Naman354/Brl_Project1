@@ -63,7 +63,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"description\":\"Yayy\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Your Name\",\r\n    \"description\":\"Sample Desciption\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -71,7 +71,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/putRoute/68c7fc2bdacf3a517abc51e8",
+					"raw": "http://localhost:3000/api/putRoute/:id",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -80,7 +80,13 @@
 					"path": [
 						"api",
 						"putRoute",
-						"68c7fc2bdacf3a517abc51e8"
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
 					]
 				}
 			},
@@ -92,7 +98,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/deleteRoute/68ce7dd1e71268cb361d317c",
+					"raw": "http://localhost:3000/api/deleteRoute/:id",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -101,7 +107,49 @@
 					"path": [
 						"api",
 						"deleteRoute",
-						"68ce7dd1e71268cb361d317c"
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Your Name\",\r\n    \"description\":\"Sample Desciption\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/patchRoute/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"patchRoute",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
 					]
 				}
 			},
