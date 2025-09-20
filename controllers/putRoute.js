@@ -7,8 +7,11 @@ const putRoute = async (req, res) => {
         const {name, description} = req.body;
 
         const put = await Schema_Structure.findByIdAndUpdate(id,
-        {name , description, updatedAt:Date.now()},
-        )
+        {name , description, updatedAt:Date.now()},{
+            new: true,
+            runValidators:true
+        }
+        );
 
         res.status(200).json({
             success:true,
